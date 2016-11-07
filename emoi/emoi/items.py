@@ -11,4 +11,6 @@ import scrapy
 class EmoiItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+    murl = scrapy.Field()
+    purl = scrapy.Field()
+    meta = scrapy.Field()
