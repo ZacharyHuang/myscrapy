@@ -16,3 +16,4 @@ pip-log.txt
 nosetests.xml
 *.mo
 .mr.developer.cfg
+.idea
