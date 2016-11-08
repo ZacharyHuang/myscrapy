@@ -39,7 +39,7 @@ class QqbiaoqingV1Spider(scrapy.Spider):
         yield EmoiItem(
             purl = response.url,
             murl = content.xpath('div[@class="cleft"]/span/i/img/@src').extract()[0],
-            title = content.xpath('div[@class="cright"]/h1/text()').extract()[0].encode('utf-8')
+            meta = content.xpath('div[@class="cright"]/h1/text()').extract()[0].encode('utf-8')
         )
         next_url = content.xpath('//a[@class="po-right"]/@href').extract()
         if len(next_url) > 0:
